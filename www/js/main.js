@@ -7,6 +7,7 @@ angular.module('emission.main', ['emission.main.recent',
                                  'emission.main.common',
                                  'emission.main.heatmap',
                                  'emission.main.metrics',
+                                 'emission.main.survey',
                                  'emission.tripconfirm.posttrip.map',
                                  'emission.services',
                                  'emission.services.email'])
@@ -14,7 +15,7 @@ angular.module('emission.main', ['emission.main.recent',
 .config(function($stateProvider, $ionicConfigProvider, $urlRouterProvider) {
   $stateProvider
   // setup an abstract state for the tabs directive
-    .state('root.main', {
+  .state('root.main', {
     url: '/main',
     abstract: true,
     templateUrl: 'templates/main.html',
@@ -25,7 +26,7 @@ angular.module('emission.main', ['emission.main.recent',
     url: '/common',
     abstract: true,
     views: {
-      'main-common': {
+      'main-common': {  
         templateUrl: 'templates/main-common.html',
         controller: 'CommonCtrl'
       }
@@ -68,6 +69,16 @@ angular.module('emission.main', ['emission.main.recent',
       'main-goals': {
         templateUrl: 'templates/main-goals.html',
         controller: 'GoalsCtrl'
+      }
+    }
+  })
+
+  .state('root.main.survey', {
+    url: '/survey',
+    views: {
+      'main-survey': {
+        templateUrl: 'templates/main-survey.html',
+        controller: 'SurveyCtrl'
       }
     }
   })

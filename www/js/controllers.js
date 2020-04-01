@@ -57,6 +57,7 @@ angular.module('emission.controllers', ['emission.splash.updatecheck',
                           'root.main.control',
                           'root.main.metrics',
                           'root.main.goals',
+                          'root.main.survey',
                           'root.main.diary']
       if (isInList(toState.name, personalTabs)) {
         // toState is in the personalTabs list

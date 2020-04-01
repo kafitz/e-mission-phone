@@ -205,6 +205,10 @@
         "tour-get": "Click here to generate the heatmap."
     },
 
+    "main-survey": {
+        "title": "Survey"
+    },
+
     "details":{
         "speed": "Speed",
         "time": "Temps",

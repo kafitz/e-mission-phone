@@ -24,7 +24,6 @@ angular.module('emission.main.common.map',['emission.main.common.services',
   };
 
 
-
   var onEachFeature = function(feature, layer) {
     console.log("onEachFeature called with "+JSON.stringify(feature));
     console.log("type is "+feature.geometry.type);

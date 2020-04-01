@@ -499,8 +499,8 @@ angular.module('emission.main.metrics',['nvd3',
           }
       })
       .catch(function(error) {
-        $ionicLoading.hide();
-        Logger.displayError("Error loading user data", error);
+          $ionicLoading.hide();
+          Logger.displayError("Error loading user data", error);
       })
 
       getAggMetricsFromServer().then(function(results) {

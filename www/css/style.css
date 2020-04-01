@@ -1289,6 +1289,7 @@ span.rz-bar-wrapper {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
+  text-align: center;      /* center text in fields */
 }
 .metric-basic {
   width: 100%;

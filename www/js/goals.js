@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('emission.main.goals',['emission.services', 'emission.plugin.logger',
-                'emission.plugin.kvstore',
-                'emission.survey.launch',
-                'ngSanitize', 'ngAnimate',
-                'emission.splash.referral',
-                'ng-walkthrough', 'nzTour'])
+               'emission.plugin.kvstore',
+               'emission.survey.launch',
+               'ngSanitize', 'ngAnimate',
+               'emission.splash.referral',
+               'ng-walkthrough', 'nzTour'])
 
 .controller('GoalsCtrl', function(CommHelper, $state, $ionicLoading, $ionicPlatform, $scope, $rootScope, $ionicModal, nzTour,
                                 $window, $http, $ionicPopup, $timeout, KVStore, ReferralHandler, ReferHelper, Logger, $cordovaInAppBrowser, SurveyLaunch) {
